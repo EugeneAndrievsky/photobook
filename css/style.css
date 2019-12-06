@@ -1,1 +1,62 @@
-﻿
+/*
+Photoshop: xThin -> Font file: thin (200)
+Photoshop: thin -> Font file: light (300)
+Photoshop: light -> Font file: reg (400)
+Photoshop: regular -> Font file: medium (500)
+*/
+
+@font-face {
+  font-family: "PF Agora Sans Pro";
+  src: url("../fonts/pfagorasanspro-black.woff2") format("woff2"),
+       url("../fonts/pfagorasanspro-black.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PF Agora Sans Pro";
+  src: url("../fonts/pfagorasanspro-bold.woff2") format("woff2"),
+       url("../fonts/pfagorasanspro-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PF Agora Sans Pro";
+  src: url("../fonts/pfagorasanspro-medium.woff2") format("woff2"),
+       url("../fonts/pfagorasanspro-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PF Agora Sans Pro";
+  src: url("../fonts/pfagorasanspro-regular.woff2") format("woff2"),
+       url("../fonts/pfagorasanspro-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PF Agora Sans Pro";
+  src: url("../fonts/pfagorasanspro-light.woff2") format("woff2"),
+       url("../fonts/pfagorasanspro-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PF Agora Sans Pro";
+  src: url("../fonts/pfagorasanspro-thin.woff2") format("woff2"),
+       url("../fonts/pfagorasanspro-thin.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PF Agora Sans Pro";
+  src: url("../fonts/pfagorasanspro-xthin.woff2") format("woff2"),
+       url("../fonts/pfagorasanspro-xthin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
