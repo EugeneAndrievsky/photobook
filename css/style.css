@@ -60,3 +60,172 @@ Photoshop: regular -> Font file: medium (500)
   font-weight: 100;
   font-style: normal;
 }
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PF Agora Sans Pro", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-navigation {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.site-navigation {  
+  font-family: "PF Agora Sans Pro", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+p {
+  font-family: "PF Agora Sans Pro", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+h2, b {
+  font-size: 60px;
+  font-weight: 300;
+  font-variant:  small-caps
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 500;
+  font-variant:  small-caps
+}
+
+a {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 300;
+
+}
+
+.main-header-logo img {
+  display: block;
+}
+
+
+
+@media (min-width: 600px) {
+
+  .main-header {
+    margin: 20px auto;
+    max-width: 1200px;
+  }
+
+  .main-header .main-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-header .site-navigation {
+    position: relative;
+
+    display: block;
+    order: -1;
+
+    margin: 0;
+    margin-right: 65px;
+    padding: 0;
+    width: 25px;
+    height: 18px;
+
+    background-color: #ffffff;
+  }
+
+  .main-navigation .main-header-logo {
+    margin-right: auto;
+  }
+
+  .main-header .site-navigation::before {
+    content: "";
+    position: absolute;
+
+    width: 25px;
+    height: 2px;
+
+    background-color: #000000;
+    box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+  }
+
+  .site-navigation li {
+    display: none;
+  }
+
+  .main-header .user-navigation {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  .main-header .main-header-contact {
+    position: relative;
+
+    margin-right: 65px;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    padding-left: 36px;
+    padding-right: 36px;
+
+    font-size: 16px;
+    line-height: 20px;
+
+    background-color: #ffd200;
+    border-radius: 10px;
+  }
+
+  .main-header .main-header-contact::before {
+    content: "";
+    position: absolute;
+    left: 38px;
+    right: 38px;
+
+    width: auto;
+    height: 1px;
+
+    border-bottom: 1px dashed black;
+    bottom: 10px;
+  }
+
+  .user-navigation .login-link {
+    display: block;
+
+    width: 33px;
+    height: 29px;
+
+    font-size: 0;
+
+    background-image: url("../img/icons/login.svg");
+    background-repeat: no-repeat;
+  }
+
+}
