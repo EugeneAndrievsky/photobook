@@ -61,6 +61,8 @@ Photoshop: regular -> Font file: medium (500)
   font-style: normal;
 }
 
+
+
 html {
   box-sizing: border-box;
 }
@@ -74,14 +76,20 @@ html {
 body {
   margin: 0;
   padding: 0;
+
   font-family: "PF Agora Sans Pro", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   color: #000000;
+
   background-color: #ffffff;
 }
 
 a {
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 300;
+  text-transform: uppercase;
   text-decoration: none;
   color: #000000;
 }
@@ -91,44 +99,85 @@ img {
   height: auto;
 }
 
-.main-navigation {
-  color: #000000;
-  background-color: #ffffff;
-}
-
-.site-navigation {  
-  font-family: "PF Agora Sans Pro", Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-}
-
 p {
   font-family: "PF Agora Sans Pro", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
 }
 
-h2, b {
+h2,
+b {
   font-size: 60px;
   font-weight: 300;
-  font-variant:  small-caps
+  font-variant: small-caps;
 }
 
 h3 {
   font-size: 36px;
   font-weight: 500;
-  font-variant:  small-caps
+  font-variant: small-caps;
 }
 
-a {
-  font-size: 26px;
-  text-transform: uppercase;
-  font-weight: 300;
 
+
+.main-header .main-navigation {
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.main-header .site-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+
+  font-family: "PF Agora Sans Pro", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+
+  list-style: none;
+}
+
+.site-navigation li {
+  margin-bottom: 10px;
+}
+
+.main-header .user-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+
+  list-style: none;
+}
+
+.user-navigation .login-link {
+  display: block;
+  padding-left: 45px;
+
+  line-height: 1;
+  
+  background-image: url("../img/icons/login.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.main-header-logo {
+  display: block;
+  margin: 25px 0;
 }
 
 .main-header-logo img {
   display: block;
+  margin: 0 auto;
+}
+
+.main-header-contact {
+  display: none;
 }
 
 
@@ -142,15 +191,17 @@ a {
 
   .main-header .main-navigation {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    max-width: none;
   }
 
   .main-header .site-navigation {
     position: relative;
+    order: -1;
 
     display: block;
-    order: -1;
 
     margin: 0;
     margin-right: 65px;
@@ -159,10 +210,6 @@ a {
     height: 18px;
 
     background-color: #ffffff;
-  }
-
-  .main-navigation .main-header-logo {
-    margin-right: auto;
   }
 
   .main-header .site-navigation::before {
@@ -187,9 +234,15 @@ a {
     list-style: none;
   }
 
-  .main-header .main-header-contact {
+  .main-header-logo {
+    margin: 0;
+    margin-right: auto;
+  }
+
+  .main-header-contact {
     position: relative;
 
+    display: block;
     margin-right: 65px;
     padding-top: 7px;
     padding-bottom: 10px;
@@ -203,7 +256,7 @@ a {
     border-radius: 10px;
   }
 
-  .main-header .main-header-contact::before {
+  .main-header-contact::before {
     content: "";
     position: absolute;
     left: 38px;
@@ -218,6 +271,7 @@ a {
 
   .user-navigation .login-link {
     display: block;
+    padding: 0;
 
     width: 33px;
     height: 29px;
