@@ -76,6 +76,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  min-width: 320px;
 
   font-family: "PF Agora Sans Pro", Arial, sans-serif;
   font-size: 18px;
@@ -117,6 +118,21 @@ h3 {
   font-weight: 500;
   font-variant: small-caps;
 }
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 
 
 .main-header .main-navigation {
@@ -302,7 +318,7 @@ h3 {
 
 .promo p {
   margin: 0;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .promo-slogan {
@@ -353,6 +369,8 @@ h3 {
   }
 
   .promo-slogan {
+    margin-bottom: 10px;
+    
     font-size: 60px;
     line-height: 60px;
   }
@@ -369,4 +387,110 @@ h3 {
     line-height: 34px;
   }
 
+}
+
+
+.guide {
+  margin: 0 auto;
+  padding-top: 55px;
+  padding-bottom: 85px;
+  max-width: 415px;
+}
+
+.guide-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.guide-item {
+  position: relative;
+
+  margin-bottom: 30px;
+  padding-top: 158px;
+  width: 139px;
+
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.guide-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 139px;
+  height: 139px;
+
+  border: 5px solid #ffd200;
+  border-radius: 50%;
+}
+
+.guide-item-download {
+  background-image: url(../img/icons/guide-download.svg);
+  background-repeat: no-repeat;
+  background-size: 57px 48px;
+  background-position: 50% 51px;
+}
+
+.guide-item-design {
+  background-image: url(../img/icons/guide-design.svg);
+  background-repeat: no-repeat;
+  background-size: 54px 52px;
+  background-position: 50% 43px;
+}
+
+.guide-item-pay {
+  background-image: url(../img/icons/guide-pay.svg);
+  background-repeat: no-repeat;
+  background-size: 62px 55px;
+  background-position: 50% 37px;
+}
+
+.guide-item-get {
+  background-image: url(../img/icons/guide-get.svg);
+  background-repeat: no-repeat;
+  background-size: 52px 57px;
+  background-position: 50% 43px;
+}
+
+
+@media (min-width: 600px) {
+
+  .guide {
+    max-width: 1025px;
+  }
+
+  .guide-item {
+    margin: 0;
+  }
+}
+
+
+@media (min-width: 1024px) {
+
+  .guide-item::after {
+    content: "";
+    position: absolute;
+
+    top: 67px;
+    left: 135px;
+
+    width: 125px;
+    height: 5px;
+
+    background-image: url("../img/icons/divider.svg");
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+  }
+
+  .guide-item:last-child::after {
+    display: none;
+  }
 }
