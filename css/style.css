@@ -159,6 +159,12 @@ h3 {
 
 }
 
+.btn-danger {
+  color: #ffffff;
+
+  background-color: #e11a27;
+}
+
 
 
 .main-header .main-navigation {
@@ -385,6 +391,7 @@ h3 {
 
     font-size: 60px;
     line-height: 60px;
+    letter-spacing: 0.1em;
   }
 
   .promo-subtitle {
@@ -491,7 +498,7 @@ h3 {
     width: 125px;
     height: 5px;
 
-    background-image: url("../img/divider.svg");
+    background-image: url("../img/icons/divider.svg");
     background-repeat: no-repeat;
     background-position: 0 50%;
   }
@@ -575,12 +582,6 @@ h3 {
   text-align: center;
 }
 
-.advantage .btn-danger {
-  color: #ffffff;
-
-  background-color: #e11a27;
-}
-
 
 @media (min-width: 600px) {
 
@@ -592,14 +593,18 @@ h3 {
   .advantage-title {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 65px;
+    margin-bottom: 55px;
+    
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 0.1em;
   }
 
   .advantage-list {
     max-width: 1024px;
     margin-bottom: 85px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .advantage-item {
@@ -646,6 +651,11 @@ h3 {
 }
 
 @media (min-width: 1024px) {
+  
+  
+  .advantage-list {
+    justify-content: space-between;
+  }
 
   .advantage .item-picture {
     width: 267px;
@@ -697,7 +707,7 @@ h3 {
   font-size: 36px;
   line-height: 1.15em;
   font-weight: 500;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.12em;
   font-variant: small-caps;
   text-align: center;
 }
@@ -763,6 +773,7 @@ h3 {
   font-size: 22px;
   line-height: 1.15em;
   font-weight: 300;
+  letter-spacing: 0.07em;
   text-align: center;
 }
 
@@ -781,7 +792,7 @@ h3 {
     font-size: 60px;
     line-height: 1.15em;
     font-weight: 200;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.1em;
     font-variant: small-caps;
     text-align: center;
   }
@@ -829,7 +840,7 @@ h3 {
     color: #e11a27;
 
     background-color: transparent;
-    background-image: url("../img/bestseller.svg");
+    background-image: url("../img/icons/bestseller.svg");
     background-repeat: no-repeat;
     background-position: 50% 0;
   }
@@ -839,9 +850,217 @@ h3 {
 
 
 .reviews {
+  padding-top: 30px;
+  padding-bottom: 50px;
+
+  text-align: center;
+
   background-image: url("../img/review-background.jpg");
+  background-repeat: no-repeat;
 }
 
 .reviews-title {
   margin: 0;
+  margin-bottom: 50px;
+
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 200;
+  letter-spacing: 0.06em;
+  font-variant: small-caps;
+  text-align: center;
 }
+
+.reviews .review {
+  padding: 0 10px;
+}
+
+.reviews .review-author {
+  display: block;
+  margin: 0 auto;
+  padding-top: 35px;
+  padding-left: 175px;
+  max-width: 380px;
+  min-height: 158px;
+
+  background-image: url("../img/author.png");
+  background-repeat: no-repeat;
+}
+
+.reviews .review-author-name {
+  display: block;
+  margin-bottom: 10px;
+
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  font-variant: small-caps;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+
+.reviews .review-author-about {
+  display: block;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.reviews .review-text {
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.reviews-next {
+  position: relative;
+
+  display: block;
+  margin-bottom: 50px;
+  margin-right: 10px;
+  padding-right: 40px;
+
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 300;
+  text-transform: none;
+  text-align: right;
+}
+
+.reviews-next::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: 0;
+
+  width: 26px;
+  height: 3px;
+
+  background-image: url("../img/icons/arrow.svg");
+  background-repeat: no-repeat;
+}
+
+
+@media (min-width: 600px) {
+
+  .reviews {
+    padding-top: 33px;
+    padding-bottom: 55px;
+
+    background-size: cover;
+    background-position: -135px 0;
+  }
+
+  .reviews-wrapper {
+    margin-left: 50px;
+    width: 545px;
+  }
+
+  .reviews-title {
+    margin: 0;
+    margin-bottom: 47px;
+
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+    font-variant: small-caps;
+    text-align: left;
+  }
+
+  .reviews .review {
+    padding: 0;
+  }
+
+  .reviews .review-author {
+    margin: 0;
+    margin-bottom: 23px;
+    padding-top: 50px;
+    padding-left: 190px;
+  }
+
+  .reviews .review-author-name {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: small-caps;
+    letter-spacing: 0.1em;
+    text-align: left;
+  }
+
+  .reviews .review-author-about {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+  }
+
+  .reviews .review-text {
+    margin-bottom: 40px;
+  }
+
+  .reviews-next {
+    margin-right: 0;
+    margin-bottom: 110px;
+  }
+
+}
+
+
+@media (min-width: 1024px) {
+
+  .reviews {
+    text-align: left;
+
+    background-position: center;
+  }
+
+  .reviews-wrapper {
+    margin: 0 auto;
+    width: 1024px;
+  }
+
+  .reviews .review {
+    width: 545px;
+  }
+
+  .reviews-next {
+    width: 545px;
+  }
+
+  .reviews .btn {
+    margin-left: 80px;
+  }
+
+}
+
+
+
+.info {}
+
+.info-list {}
+
+.info-item {}
+
+.info .item-heading {}
+
+.info .item-content {}
+
+.info .item-content p {}
+
+.info .payment-list {}
+
+.info .payment-item {}
+
+.info b {}
+
+.info .btn {}
