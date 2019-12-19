@@ -145,7 +145,7 @@ h3 {
   color: #212121;
 
   border: 1px solid #010101;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 @media (min-width: 600px) {
@@ -477,7 +477,7 @@ h3 {
 @media (min-width: 600px) {
 
   .guide {
-    max-width: 1025px;
+    max-width: 1024px;
   }
 
   .guide-item {
@@ -697,7 +697,7 @@ h3 {
   padding-bottom: 15px;
 
   background-color: #ffd200;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .payment .item-heading {
@@ -1045,22 +1045,125 @@ h3 {
 
 
 
-.info {}
+.info {
+  padding: 40px 0;
 
-.info-list {}
+  text-align: center;
+}
 
-.info-item {}
+.info-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
 
-.info .item-heading {}
+  text-align: left;
 
-.info .item-content {}
+  list-style: none;
+}
 
-.info .item-content p {}
+.info-item {
+  margin-bottom: 35px;
+  width: 300px;
+}
 
-.info .payment-list {}
+.info .item-heading {
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 15px 0;
 
-.info .payment-item {}
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  font-variant: small-caps;
+  text-align: center;
 
-.info b {}
+  background-color: #ffd200;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
 
-.info .btn {}
+.info .item-content {
+  padding-top: 27px;
+  padding-left: 38px;
+  padding-right: 38px;
+  min-height: 235px;
+
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+
+  background-color: #f7f0e6;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.info .item-content p {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-weight: 400;
+}
+
+.info .payment-list {
+  margin: 0;
+  padding-left: 30px;
+
+  list-style: none;
+}
+
+.info .payment-item {
+  position: relative;
+
+  margin-bottom: 9px;
+}
+
+.info .payment-item::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: calc(50% - 2px);
+
+  width: 4px;
+  height: 4px;
+
+  border-radius: 50%;
+  background-color: #000000;
+}
+
+.info .item-slogan {
+  color: #e11a27;
+  font-weight: 800;
+}
+
+.item-slogan .strong {
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+}
+
+
+@media (min-width: 600px) {
+
+  .info {
+    padding-top: 90px;
+    padding-bottom: 120px;
+  }
+
+  .info-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-bottom: 45px;
+    max-width: 1080px;
+  }
+
+  .info-item {
+    width: 315px;
+  }
+
+}
