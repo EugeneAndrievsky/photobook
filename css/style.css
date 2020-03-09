@@ -169,7 +169,7 @@ h3 {
 
 .main-header .main-navigation {
   margin: 0 auto;
-  margin-bottom: 20px;
+  padding: 40px 0;
 
   color: #000000;
 
@@ -215,7 +215,7 @@ h3 {
 
 .main-header-logo {
   display: block;
-  margin: 25px 0;
+  margin-bottom: 35px;
 }
 
 .main-header-logo img {
@@ -231,8 +231,8 @@ h3 {
 @media (min-width: 600px) {
 
   .main-header {
-    margin: 20px auto;
-    padding: 0 15px;
+    margin: 0 auto;
+    padding: 20px 15px;
     max-width: 1200px;
   }
 
@@ -339,9 +339,10 @@ h3 {
   align-items: center;
   padding-top: 30px;
   padding-bottom: 200px;
-  
+
   text-align: center;
 
+  background-color: #fdfaf5;
   background-image: url("../img/main-background.jpg");
   background-size: cover;
   background-position: center;
@@ -594,7 +595,7 @@ h3 {
     display: flex;
     justify-content: space-around;
     margin-bottom: 55px;
-    
+
     font-size: 60px;
     line-height: 60px;
     letter-spacing: 0.1em;
@@ -637,6 +638,7 @@ h3 {
   .advantage .item-description {
     display: block;
     margin: 0;
+    max-width: 267px;
 
     font-size: 16px;
     line-height: 1.15em;
@@ -651,8 +653,8 @@ h3 {
 }
 
 @media (min-width: 1024px) {
-  
-  
+
+
   .advantage-list {
     justify-content: space-between;
   }
@@ -855,6 +857,7 @@ h3 {
 
   text-align: center;
 
+  background-color: #f7f0e6;
   background-image: url("../img/review-background.jpg");
   background-repeat: no-repeat;
 }
@@ -1276,6 +1279,7 @@ h3 {
   text-transform: none;
   font-weight: 500;
 
+  vertical-align: top;
   border: 1px solid #000;
   border-radius: 10px;
 }
